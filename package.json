@@ -4,7 +4,13 @@
   "description": "",
   "main": "docs/index.html",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "@pingy/cli": "^0.6.5",
+    "babel-core": "^6.24.1",
+    "babel-preset-env": "^1.4.0",
+    "node-sass": "^4.5.2",
+    "pug": "^2.0.0-rc.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "pingy dev",
