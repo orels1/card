@@ -4,7 +4,7 @@
     "inputSha": [
       {
         "file": "index.pug",
-        "sha": "825990f51efb6154e47eeec27833d93e4e6a74df"
+        "sha": "bcb17bf752bbb0ef75fa461e4964f7da4a678ff3"
       }
     ],
     "outputSha": "65f4bd042137547c62a11c9fe1a5e3e8ebb938b2",
@@ -14,32 +14,18 @@
     ]
   },
   {
-    "type": "pug@2.0.0-rc.1::map::minify",
-    "inputSha": [
-      {
-        "file": "includes\\skills.pug",
-        "sha": "835d47c243ab4efc1d3a1cf7cfc4e7f912a9cac2"
-      }
-    ],
-    "outputSha": "50e643f8a888ed71e7ff3cd18aea7c1c72902419",
-    "input": "includes\\skills.pug",
-    "output": [
-      "includes\\skills.html"
-    ]
-  },
-  {
     "type": "node-sass@4.5.2::map::minify",
     "inputSha": [
       {
         "file": "styles\\main.sass",
-        "sha": "1b5dfa2158d079341947f617a3782bf5ec9936fa"
+        "sha": "8869673331f9162838480f3da9ba6dc27a1bfbe9"
       },
       {
         "file": "styles\\main.sass",
-        "sha": "1b5dfa2158d079341947f617a3782bf5ec9936fa"
+        "sha": "8869673331f9162838480f3da9ba6dc27a1bfbe9"
       }
     ],
-    "outputSha": "80490a3edde1f66d18ab8756590859db429527c9",
+    "outputSha": "37e59242144105a42f0c44e96696bff4bc1ad902",
     "input": "styles\\main.sass",
     "output": [
       "styles\\main.css.map",
@@ -59,6 +45,20 @@
     "output": [
       "scripts\\main.js.map",
       "scripts\\main.js"
+    ]
+  },
+  {
+    "type": "pug@2.0.0-rc.1::map::minify",
+    "inputSha": [
+      {
+        "file": "includes\\skills.pug",
+        "sha": "835d47c243ab4efc1d3a1cf7cfc4e7f912a9cac2"
+      }
+    ],
+    "outputSha": "50e643f8a888ed71e7ff3cd18aea7c1c72902419",
+    "input": "includes\\skills.pug",
+    "output": [
+      "includes\\skills.html"
     ]
   }
 ]
