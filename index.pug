@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Minimal landing
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width')
+
+    link(rel='stylesheet', href='styles/main.css')
+  body
+    .container
+      .profile
+        .inner
+          a.name(href="https://orels1.tips" target="_blank") I'm orels1
+          a.slogan(href="https://github.com/orels1" target="_blank") I do
+        .layers
+          - var n = 1
+          while n < 5
+            .layer(id="layer-" + n)
+            - n++
+          
+
+    script(src='scripts/main.js')

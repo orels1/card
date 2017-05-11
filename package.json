@@ -1,0 +1,27 @@
+{
+  "name": "card",
+  "version": "1.0.0",
+  "description": "",
+  "main": "docs/index.html",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pingy dev",
+    "export": "pingy export"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orels1/card.git"
+  },
+  "keywords": [
+    "nodejs",
+    "pingy"
+  ],
+  "author": "orels1",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/orels1/card/issues"
+  },
+  "homepage": "https://github.com/orels1/card#readme"
+}
