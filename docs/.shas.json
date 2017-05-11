@@ -14,25 +14,6 @@
     ]
   },
   {
-    "type": "node-sass@4.5.2::map::minify",
-    "inputSha": [
-      {
-        "file": "styles\\main.sass",
-        "sha": "8869673331f9162838480f3da9ba6dc27a1bfbe9"
-      },
-      {
-        "file": "styles\\main.sass",
-        "sha": "8869673331f9162838480f3da9ba6dc27a1bfbe9"
-      }
-    ],
-    "outputSha": "37e59242144105a42f0c44e96696bff4bc1ad902",
-    "input": "styles\\main.sass",
-    "output": [
-      "styles\\main.css.map",
-      "styles\\main.css"
-    ]
-  },
-  {
     "type": "babel-core@6.24.1::map::minify",
     "inputSha": [
       {
@@ -45,6 +26,25 @@
     "output": [
       "scripts\\main.js.map",
       "scripts\\main.js"
+    ]
+  },
+  {
+    "type": "node-sass@4.5.2::map::minify",
+    "inputSha": [
+      {
+        "file": "styles\\main.sass",
+        "sha": "07c133556a6fc06efa9605449d8d5d32c4fd3052"
+      },
+      {
+        "file": "styles\\main.sass",
+        "sha": "07c133556a6fc06efa9605449d8d5d32c4fd3052"
+      }
+    ],
+    "outputSha": "732334e09573f9fce448108af85af7728b3b9055",
+    "input": "styles\\main.sass",
+    "output": [
+      "styles\\main.css.map",
+      "styles\\main.css"
     ]
   },
   {

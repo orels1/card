@@ -8,7 +8,7 @@
 			"path": "node_modules",
 			"action": "exclude",
 			"type": "dir"
-		},
+		}
 	],
 	"port": 55563
 }

@@ -5,6 +5,11 @@ $bg-grad: linear-gradient(135deg, #93353f 0%,#4F3339 100%)
 $bg-grad-dark: linear-gradient(135deg, #2B152C 0%, #331826 100%)
 $bg-color: #2B152C
 
+$borders: 40px
+$borders-small: $borders / 2
+
+$break-small: 1004px
+
 html, body, .container
   min-height: 100vh
 
@@ -40,37 +45,44 @@ a, a:hover, a:active, a:visited
     align-items: flex-start
     flex-direction: column
     padding: 100px 220px
+    @media (max-width: $break-small)
+      padding: 180px 50px
 
     .name, .slogan
       font-size: 100px
       color: #fff
       font-weight: 900
       position: relative
+      @media (max-width: $break-small)
+        font-size: 40px
       animation-name: showUp
       animation-duration: 1s
       animation-iteration-count: 1
       animation-fill-mode: forwards
       animation-timing-function: cubic-bezier(.63,0,.3,1.45)
       opacity: 0
-      left: 0px
+      left: -20px
       transition: left 150ms cubic-bezier(.63,0,.3,1.45)
       z-index: 10
       cursor: pointer
 
       &:hover
-        left: 40px
+        left: 20px
 
         &::before
           opacity: 1
           padding-right: 20px
 
       &:active
-        left: 50px
+        left: 30px
 
       &::before
         content: ''
         font-family: 'FontAwesome'
         font-size: 110px
+        @media (max-width: $break-small)
+          font-size: 40px
+          line-height: 50px
         padding-right: 20px
         opacity: 0
         transition: padding 150ms cubic-bezier(.63,0,.3,1.45), opacity 150ms ease
@@ -81,10 +93,14 @@ a, a:hover, a:active, a:visited
       animation-delay: 1000ms
 
   .layer
-    border: 40px solid rgba(255,255,255,0.9)
     position: absolute
-    left: -30px
-    top: -30px
+    border: $borders solid rgba(255,255,255,0.9)
+    left: -$borders
+    top: -$borders
+    @media (max-width: $break-small)
+      border: $borders-small solid rgba(255,255,255,0.9)
+      left: -$borders-small
+      top: -$borders-small
     width: 100%
     height: 100%
     z-index: 0
@@ -114,6 +130,8 @@ $shift: 20px
     60%
       top: -30px
     80%
-      top: $shift + 30px * ($i - 2) + $shift * ($i - 2)
+      top: $shift + $borders * ($i - 2) + $shift * ($i - 2)
+      @media (max-width: $break-small)
+        top: $shift + $borders-small * ($i - 2) + $shift * ($i - 2)
     100%
       top: -30px
